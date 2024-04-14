@@ -9,7 +9,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
 builder.Services.AddSingleton<IMockDb,MockDb>();
-
+builder.Services.AddSingleton<IMockWz,MockWz>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
